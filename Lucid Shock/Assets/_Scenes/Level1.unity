@@ -224,6 +224,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Explosion
       objectReference: {fileID: 0}
+    - target: {fileID: 2880406600548772427, guid: f739dc187edfeb0408c21deb80248923,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2880406600548772428, guid: f739dc187edfeb0408c21deb80248923,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2880406600548772430, guid: f739dc187edfeb0408c21deb80248923,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2880406600548772431, guid: f739dc187edfeb0408c21deb80248923,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -665,6 +680,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelLoadDelay: 1
+  deathVFX: {fileID: 2107353854}
 --- !u!1 &1174750195
 GameObject:
   m_ObjectHideFlags: 0
@@ -1201,6 +1217,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2107353854 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2880406600548772427, guid: f739dc187edfeb0408c21deb80248923,
+    type: 3}
+  m_PrefabInstance: {fileID: 119930542}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3517557274579695
 PrefabInstance:
   m_ObjectHideFlags: 0
