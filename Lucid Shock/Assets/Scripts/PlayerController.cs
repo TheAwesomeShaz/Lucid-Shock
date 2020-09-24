@@ -20,9 +20,13 @@ public class PlayerController : MonoBehaviour
     [Header("Control Throw Based")]
     [SerializeField] float controlPitchFactor = -30f;
     [SerializeField] float controlRollFactor = -20f;
-    
+
+    [Header("References")]
+    [SerializeField] GameObject[] guns;
+
     float xThrow, yThrow;
     bool isControlEnabled;
+    bool isFiring;
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +35,7 @@ public class PlayerController : MonoBehaviour
             transform.localRotation.y,transform.localRotation.z));
 
         isControlEnabled = true;
+        isFiring = false;
     }
 
     // Update is called once per frame
@@ -40,6 +45,7 @@ public class PlayerController : MonoBehaviour
         {
             ProcessTranslation();
             ProcessRotation();
+            ProcessFiring();
         }
     }
 
@@ -82,6 +88,21 @@ public class PlayerController : MonoBehaviour
         print("Controls frozen");
         isControlEnabled = false;
     }
+
+
+    private void ProcessFiring()
+    {
+        if (CrossPlatformInputManager.GetButton("Jump"))
+        {
+            isFiring = true;
+            
+        }
+        else
+        {
+            isFiring = false;
+        }
+    }
+
 
 
 }

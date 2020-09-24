@@ -1727,9 +1727,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3517558063750261, guid: 1bb0cce0ce48e714fbe95c3b2df32a78, type: 3}
+      propertyPath: m_Name
+      value: Gun R
+      objectReference: {fileID: 0}
     - target: {fileID: 4488974918391599, guid: 1bb0cce0ce48e714fbe95c3b2df32a78, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 1625322249737244255, guid: 1bb0cce0ce48e714fbe95c3b2df32a78,
+        type: 3}
+      propertyPath: m_Name
+      value: Gun L
       objectReference: {fileID: 0}
     - target: {fileID: 2880406600596821221, guid: 1bb0cce0ce48e714fbe95c3b2df32a78,
         type: 3}
